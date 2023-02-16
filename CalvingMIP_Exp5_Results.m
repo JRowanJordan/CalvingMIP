@@ -59,7 +59,7 @@ Q = readtable('Halbrane_Profiles.csv');
 % HD=Ice thickness field along Profile D, m, 161 by 1001
 % MaskD=Ice mask along Profile D, 1 for grounded, 2 for floating, 3 for open ocean, 161 by 1001 
 
-% load Exp5Kori.mat
+ load Exp5Kori.mat
 
 nccreate(ExpName,'VX','Dimensions',{'X' 161 'Y' 161 'Time100' numel(Time100)})
 nccreate(ExpName,'VY','Dimensions',{'X' 161 'Y' 161 'Time100' numel(Time100)})
@@ -71,50 +71,50 @@ nccreate(ExpName,'Time100','Dimensions',{'Time100' numel(Time100)})
 nccreate(ExpName,'X','Dimensions',{'X' 161})
 nccreate(ExpName,'Y','Dimensions',{'Y' 161})
 
-nccreate(ExpName,'Caprona_A_Thickness','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time1' numel(Time1)})
-nccreate(ExpName,'Caprona_A_Distance','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Caprona_A_H','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Caprona_A_S','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_A_UVel','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_A_VVel','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_A_Mask','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time1' numel(Time1)})
 
-nccreate(ExpName,'Caprona_B_Thickness','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time1' numel(Time1)})
-nccreate(ExpName,'Caprona_B_Distance','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Caprona_B_H','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Caprona_B_S','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_B_UVel','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_B_VVel','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_B_Mask','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time1' numel(Time1)})
 
-nccreate(ExpName,'Caprona_C_Thickness','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time1' numel(Time1)})
-nccreate(ExpName,'Caprona_C_Distance','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Caprona_C_H','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Caprona_C_S','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_C_UVel','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_C_VVel','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_C_Mask','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time1' numel(Time1)})
 
-nccreate(ExpName,'Caprona_D_Thickness','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time1' numel(Time1)})
-nccreate(ExpName,'Caprona_D_Distance','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Caprona_D_H','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Caprona_D_S','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_D_UVel','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_D_VVel','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Caprona_D_Mask','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time1' numel(Time1)})
 
-nccreate(ExpName,'Halbrane_A_Thickness','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time1' numel(Time1)})
-nccreate(ExpName,'Halbrane_A_Distance','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Halbrane_A_H','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Halbrane_A_S','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_A_UVel','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_A_VVel','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_A_Mask','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time1' numel(Time1)})
 
-nccreate(ExpName,'Halbrane_B_Thickness','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time1' numel(Time1)})
-nccreate(ExpName,'Halbrane_B_Distance','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Halbrane_B_H','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Halbrane_B_S','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_B_UVel','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_B_VVel','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_B_Mask','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time1' numel(Time1)})
 
-nccreate(ExpName,'Halbrane_C_Thickness','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time1' numel(Time1)})
-nccreate(ExpName,'Halbrane_C_Distance','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Halbrane_C_H','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Halbrane_C_S','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_C_UVel','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_C_VVel','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_C_Mask','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time1' numel(Time1)})
 
-nccreate(ExpName,'Halbrane_D_Thickness','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time1' numel(Time1)})
-nccreate(ExpName,'Halbrane_D_Distance','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Halbrane_D_H','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time1' numel(Time1)})
+nccreate(ExpName,'Halbrane_D_S','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_D_UVel','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_D_VVel','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time1' numel(Time1)})
 nccreate(ExpName,'Halbrane_D_Mask','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time1' numel(Time1)})
@@ -128,96 +128,100 @@ ncwrite(ExpName,'H',Hice)
 ncwrite(ExpName,'Mask',Mask)
 
 
-ncwrite(ExpName,'Halbrane_A_Thickness',HHALA)
-ncwrite(ExpName,'Halbrane_A_Distance',Q.Halbrane_Profile_A_S)
+ncwrite(ExpName,'Halbrane_A_H',HHALA)
+ncwrite(ExpName,'Halbrane_A_S',Q.Halbrane_Profile_A_S)
 ncwrite(ExpName,'Halbrane_A_UVel',VXHALA)
 ncwrite(ExpName,'Halbrane_A_VVel',VYHALA)
 ncwrite(ExpName,'Halbrane_A_VVel',MHALA)
 
-ncwrite(ExpName,'Halbrane_B_Thickness',HHALB)
-ncwrite(ExpName,'Halbrane_B_Distance',Q.Halbrane_Profile_B_S)
+ncwrite(ExpName,'Halbrane_B_H',HHALB)
+ncwrite(ExpName,'Halbrane_B_S',Q.Halbrane_Profile_B_S)
 ncwrite(ExpName,'Halbrane_B_UVel',VXHALB)
 ncwrite(ExpName,'Halbrane_B_VVel',VYHALB)
 ncwrite(ExpName,'Halbrane_B_VVel',MHALB)
 
-ncwrite(ExpName,'Halbrane_C_Thickness',HHALC)
-ncwrite(ExpName,'Halbrane_C_Distance',Q.Halbrane_Profile_C_S)
+ncwrite(ExpName,'Halbrane_C_H',HHALC)
+ncwrite(ExpName,'Halbrane_C_S',Q.Halbrane_Profile_C_S)
 ncwrite(ExpName,'Halbrane_C_UVel',VXHALC)
 ncwrite(ExpName,'Halbrane_C_VVel',VYHALC)
 ncwrite(ExpName,'Halbrane_C_VVel',MHALC)
 
-ncwrite(ExpName,'Halbrane_D_Thickness',HHALD)
-ncwrite(ExpName,'Halbrane_D_Distance',Q.Halbrane_Profile_D_S)
+ncwrite(ExpName,'Halbrane_D_H',HHALD)
+ncwrite(ExpName,'Halbrane_D_S',Q.Halbrane_Profile_D_S)
 ncwrite(ExpName,'Halbrane_D_UVel',VXHALD)
 ncwrite(ExpName,'Halbrane_D_VVel',VYHALD)
 ncwrite(ExpName,'Halbrane_D_VVel',MHALD)
 
-ncwrite(ExpName,'Caprona_A_Thickness',HCAPA)
-ncwrite(ExpName,'Caprona_A_Distance',P.Caprona_Profile_A_S)
+ncwrite(ExpName,'Caprona_A_H',HCAPA)
+ncwrite(ExpName,'Caprona_A_S',P.Caprona_Profile_A_S)
 ncwrite(ExpName,'Caprona_A_UVel',VXCAPA)
 ncwrite(ExpName,'Caprona_A_VVel',VYCAPA)
 ncwrite(ExpName,'Caprona_A_VVel',MCAPA)
 
-ncwrite(ExpName,'Caprona_B_Thickness',HCAPB)
-ncwrite(ExpName,'Caprona_B_Distance',P.Caprona_Profile_B_S)
+ncwrite(ExpName,'Caprona_B_H',HCAPB)
+ncwrite(ExpName,'Caprona_B_S',P.Caprona_Profile_B_S)
 ncwrite(ExpName,'Caprona_B_UVel',VXCAPB)
 ncwrite(ExpName,'Caprona_B_VVel',VYCAPB)
 ncwrite(ExpName,'Caprona_B_VVel',MCAPB)
 
-ncwrite(ExpName,'Caprona_C_Thickness',HCAPC)
-ncwrite(ExpName,'Caprona_C_Distance',P.Caprona_Profile_C_S)
+ncwrite(ExpName,'Caprona_C_H',HCAPC)
+ncwrite(ExpName,'Caprona_C_S',P.Caprona_Profile_C_S)
 ncwrite(ExpName,'Caprona_C_UVel',VXCAPC)
 ncwrite(ExpName,'Caprona_C_VVel',VYCAPC)
 ncwrite(ExpName,'Caprona_C_VVel',MCAPC)
 
-ncwrite(ExpName,'Caprona_D_Thickness',HCAPD)
-ncwrite(ExpName,'Caprona_D_Distance',P.Caprona_Profile_D_S)
+ncwrite(ExpName,'Caprona_D_H',HCAPD)
+ncwrite(ExpName,'Caprona_D_S',P.Caprona_Profile_D_S)
 ncwrite(ExpName,'Caprona_D_UVel',VXCAPD)
 ncwrite(ExpName,'Caprona_D_VVel',VYCAPD)
 ncwrite(ExpName,'Caprona_D_VVel',MCAPD)
 
-ncwriteatt(ExpName,'Caprona_A_Thickness','Units','m');
-ncwriteatt(ExpName,'Caprona_A_Distance','Units','m');
+ncwriteatt(ExpName,'Caprona_A_H','Units','m');
+ncwriteatt(ExpName,'Caprona_A_S','Units','m');
 ncwriteatt(ExpName,'Caprona_A_UVel','Units','m a-1');
 ncwriteatt(ExpName,'Caprona_A_VVel','Units','m a-1');
 
-ncwriteatt(ExpName,'Caprona_B_Thickness','Units','m');
-ncwriteatt(ExpName,'Caprona_B_Distance','Units','m');
+ncwriteatt(ExpName,'Caprona_B_H','Units','m');
+ncwriteatt(ExpName,'Caprona_B_S','Units','m');
 ncwriteatt(ExpName,'Caprona_B_UVel','Units','m a-1');
 ncwriteatt(ExpName,'Caprona_B_VVel','Units','m a-1');
 
-ncwriteatt(ExpName,'Caprona_C_Thickness','Units','m');
-ncwriteatt(ExpName,'Caprona_C_Distance','Units','m');
+ncwriteatt(ExpName,'Caprona_C_H','Units','m');
+ncwriteatt(ExpName,'Caprona_C_S','Units','m');
 ncwriteatt(ExpName,'Caprona_C_UVel','Units','m a-1');
 ncwriteatt(ExpName,'Caprona_C_VVel','Units','m a-1');
 
-ncwriteatt(ExpName,'Caprona_D_Thickness','Units','m');
-ncwriteatt(ExpName,'Caprona_D_Distance','Units','m');
+ncwriteatt(ExpName,'Caprona_D_H','Units','m');
+ncwriteatt(ExpName,'Caprona_D_S','Units','m');
 ncwriteatt(ExpName,'Caprona_D_UVel','Units','m a-1');
 ncwriteatt(ExpName,'Caprona_D_VVel','Units','m a-1');
 
-ncwriteatt(ExpName,'Halbrane_A_Thickness','Units','m');
-ncwriteatt(ExpName,'Halbrane_A_Distance','Units','m');
+ncwriteatt(ExpName,'Halbrane_A_H','Units','m');
+ncwriteatt(ExpName,'Halbrane_A_S','Units','m');
 ncwriteatt(ExpName,'Halbrane_A_UVel','Units','m a-1');
 ncwriteatt(ExpName,'Halbrane_A_VVel','Units','m a-1');
 
-ncwriteatt(ExpName,'Halbrane_B_Thickness','Units','m');
-ncwriteatt(ExpName,'Halbrane_B_Distance','Units','m');
+ncwriteatt(ExpName,'Halbrane_B_H','Units','m');
+ncwriteatt(ExpName,'Halbrane_B_S','Units','m');
 ncwriteatt(ExpName,'Halbrane_B_UVel','Units','m a-1');
 ncwriteatt(ExpName,'Halbrane_B_VVel','Units','m a-1');
 
-ncwriteatt(ExpName,'Halbrane_C_Thickness','Units','m');
-ncwriteatt(ExpName,'Halbrane_C_Distance','Units','m');
+ncwriteatt(ExpName,'Halbrane_C_H','Units','m');
+ncwriteatt(ExpName,'Halbrane_C_S','Units','m');
 ncwriteatt(ExpName,'Halbrane_C_UVel','Units','m a-1');
 ncwriteatt(ExpName,'Halbrane_C_VVel','Units','m a-1');
 
-ncwriteatt(ExpName,'Halbrane_D_Thickness','Units','m');
-ncwriteatt(ExpName,'Halbrane_D_Distance','Units','m');
+ncwriteatt(ExpName,'Halbrane_D_H','Units','m');
+ncwriteatt(ExpName,'Halbrane_D_S','Units','m');
 ncwriteatt(ExpName,'Halbrane_D_UVel','Units','m a-1');
 ncwriteatt(ExpName,'Halbrane_D_VVel','Units','m a-1');
 
 
 ncdisp(ExpName)
+
+
+
+
 
 
 
