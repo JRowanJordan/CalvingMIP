@@ -69,84 +69,79 @@ nccreate(ExpName,'Y','Dimensions',{'Y' 161})
 
 nccreate(ExpName,'Profile_A_H','Dimensions',{'Profile A' numel(HA) 'Time1' numel(Time1)})
 nccreate(ExpName,'Profile_A_S','Dimensions',{'Profile A' numel(HA) 'Time1' numel(Time1)})
-nccreate(ExpName,'Profile_A_UVel','Dimensions',{'Profile A' numel(HA) 'Time1' numel(Time1)})
-nccreate(ExpName,'Profile_A_VVel','Dimensions',{'Profile A' numel(HA) 'Time1' numel(Time1)})
+nccreate(ExpName,'Profile_A_VX','Dimensions',{'Profile A' numel(HA) 'Time1' numel(Time1)})
+nccreate(ExpName,'Profile_A_VY','Dimensions',{'Profile A' numel(HA) 'Time1' numel(Time1)})
 nccreate(ExpName,'Profile_A_Mask','Dimensions',{'Profile A' numel(HA) 'Time1' numel(Time1)})
 
 nccreate(ExpName,'Profile_B_H','Dimensions',{'Profile B' numel(HB) 'Time1' numel(Time1)})
 nccreate(ExpName,'Profile_B_S','Dimensions',{'Profile B' numel(HB) 'Time1' numel(Time1)})
-nccreate(ExpName,'Profile_B_UVel','Dimensions',{'Profile B' numel(HB) 'Time1' numel(Time1)})
-nccreate(ExpName,'Profile_B_VVel','Dimensions',{'Profile B' numel(HB) 'Time1' numel(Time1)})
+nccreate(ExpName,'Profile_B_VX','Dimensions',{'Profile B' numel(HB) 'Time1' numel(Time1)})
+nccreate(ExpName,'Profile_B_VY','Dimensions',{'Profile B' numel(HB) 'Time1' numel(Time1)})
 nccreate(ExpName,'Profile_B_Mask','Dimensions',{'Profile B' numel(HB) 'Time1' numel(Time1)})
 
 nccreate(ExpName,'Profile_C_H','Dimensions',{'Profile C' numel(HC) 'Time1' numel(Time1)})
 nccreate(ExpName,'Profile_C_S','Dimensions',{'Profile C' numel(HC) 'Time1' numel(Time1)})
-nccreate(ExpName,'Profile_C_UVel','Dimensions',{'Profile C' numel(HC) 'Time1' numel(Time1)})
-nccreate(ExpName,'Profile_C_VVel','Dimensions',{'Profile C' numel(HC) 'Time1' numel(Time1)})
+nccreate(ExpName,'Profile_C_VX','Dimensions',{'Profile C' numel(HC) 'Time1' numel(Time1)})
+nccreate(ExpName,'Profile_C_VY','Dimensions',{'Profile C' numel(HC) 'Time1' numel(Time1)})
 nccreate(ExpName,'Profile_C_Mask','Dimensions',{'Profile C' numel(HC) 'Time1' numel(Time1)})
 
 nccreate(ExpName,'Profile_D_H','Dimensions',{'Profile D' numel(HD) 'Time1' numel(Time1)})
 nccreate(ExpName,'Profile_D_S','Dimensions',{'Profile D' numel(HD) 'Time1' numel(Time1)})
-nccreate(ExpName,'Profile_D_UVel','Dimensions',{'Profile D' numel(HD) 'Time1' numel(Time1)})
-nccreate(ExpName,'Profile_D_VVel','Dimensions',{'Profile D' numel(HD) 'Time1' numel(Time1)})
+nccreate(ExpName,'Profile_D_VX','Dimensions',{'Profile D' numel(HD) 'Time1' numel(Time1)})
+nccreate(ExpName,'Profile_D_VY','Dimensions',{'Profile D' numel(HD) 'Time1' numel(Time1)})
 nccreate(ExpName,'Profile_D_Mask','Dimensions',{'Profile D' numel(HD) 'Time1' numel(Time1)})
 
+ncwrite(ExpName,'Time1',Time1)
+ncwrite(ExpName,'Time100',Time100)
 ncwrite(ExpName,'X',X)
 ncwrite(ExpName,'Y',Y)
 ncwrite(ExpName,'VX',VX)
 ncwrite(ExpName,'VY',VY)
-ncwrite(ExpName,'H',Hice)
+ncwrite(ExpName,'H',H)
 ncwrite(ExpName,'Mask',Mask)
-
 
 ncwrite(ExpName,'Profile_A_H',HA)
 ncwrite(ExpName,'Profile_A_S',P.Circle_Profile_A_S)
-ncwrite(ExpName,'Profile_A_UVel',VXA)
-ncwrite(ExpName,'Profile_A_VVel',VYA)
-ncwrite(ExpName,'Profile_A_VVel',MA)
+ncwrite(ExpName,'Profile_A_VX',VXA)
+ncwrite(ExpName,'Profile_A_VY',VYA)
+ncwrite(ExpName,'Profile_A_Mask',MA)
 
 ncwrite(ExpName,'Profile_B_H',HB)
 ncwrite(ExpName,'Profile_B_S',P.Circle_Profile_B_S)
-ncwrite(ExpName,'Profile_B_UVel',VXB)
-ncwrite(ExpName,'Profile_B_VVel',VYB)
-ncwrite(ExpName,'Profile_B_VVel',MB)
+ncwrite(ExpName,'Profile_B_VX',VXB)
+ncwrite(ExpName,'Profile_B_VY',VYB)
+ncwrite(ExpName,'Profile_B_Mask',MB)
 
 ncwrite(ExpName,'Profile_C_H',HC)
 ncwrite(ExpName,'Profile_C_S',P.Circle_Profile_C_S)
-ncwrite(ExpName,'Profile_C_UVel',VXC)
-ncwrite(ExpName,'Profile_C_VVel',VYC)
-ncwrite(ExpName,'Profile_C_VVel',MC)
+ncwrite(ExpName,'Profile_C_VX',VXC)
+ncwrite(ExpName,'Profile_C_VY',VYC)
+ncwrite(ExpName,'Profile_C_Mask',MC)
 
 ncwrite(ExpName,'Profile_D_H',HD)
 ncwrite(ExpName,'Profile_D_S',P.Circle_Profile_D_S)
-ncwrite(ExpName,'Profile_D_UVel',VXD)
-ncwrite(ExpName,'Profile_D_VVel',VYD)
-ncwrite(ExpName,'Profile_D_VVel',MD)
+ncwrite(ExpName,'Profile_D_VX',VXD)
+ncwrite(ExpName,'Profile_D_VY',VYD)
+ncwrite(ExpName,'Profile_D_Mask',MD)
 
 ncwriteatt(ExpName,'Profile_A_H','Units','m');
 ncwriteatt(ExpName,'Profile_A_S','Units','m');
-ncwriteatt(ExpName,'Profile_A_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Profile_A_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Profile_A_VX','Units','m a-1');
+ncwriteatt(ExpName,'Profile_A_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Profile_B_H','Units','m');
 ncwriteatt(ExpName,'Profile_B_S','Units','m');
-ncwriteatt(ExpName,'Profile_B_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Profile_B_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Profile_B_VX','Units','m a-1');
+ncwriteatt(ExpName,'Profile_B_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Profile_C_H','Units','m');
 ncwriteatt(ExpName,'Profile_C_S','Units','m');
-ncwriteatt(ExpName,'Profile_C_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Profile_C_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Profile_C_VX','Units','m a-1');
+ncwriteatt(ExpName,'Profile_C_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Profile_D_H','Units','m');
 ncwriteatt(ExpName,'Profile_D_S','Units','m');
-ncwriteatt(ExpName,'Profile_D_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Profile_D_VVel','Units','m a-1');
-
+ncwriteatt(ExpName,'Profile_D_VX','Units','m a-1');
+ncwriteatt(ExpName,'Profile_D_VY','Units','m a-1');
 
 ncdisp(ExpName)
-
-
-
-
-

@@ -68,50 +68,50 @@ nccreate(ExpName,'Y','Dimensions',{'Y' 161})
 
 nccreate(ExpName,'Caprona_A_H','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time' numel(Time)})
 nccreate(ExpName,'Caprona_A_S','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time' numel(Time)})
-nccreate(ExpName,'Caprona_A_UVel','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time' numel(Time)})
-nccreate(ExpName,'Caprona_A_VVel','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time' numel(Time)})
+nccreate(ExpName,'Caprona_A_VX','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time' numel(Time)})
+nccreate(ExpName,'Caprona_A_VY','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time' numel(Time)})
 nccreate(ExpName,'Caprona_A_Mask','Dimensions',{'Caprona A' numel(P.Caprona_Profile_A_X) 'Time' numel(Time)})
 
 nccreate(ExpName,'Caprona_B_H','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time' numel(Time)})
 nccreate(ExpName,'Caprona_B_S','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time' numel(Time)})
-nccreate(ExpName,'Caprona_B_UVel','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time' numel(Time)})
-nccreate(ExpName,'Caprona_B_VVel','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time' numel(Time)})
+nccreate(ExpName,'Caprona_B_VX','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time' numel(Time)})
+nccreate(ExpName,'Caprona_B_VY','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time' numel(Time)})
 nccreate(ExpName,'Caprona_B_Mask','Dimensions',{'Caprona B' numel(P.Caprona_Profile_B_X) 'Time' numel(Time)})
 
 nccreate(ExpName,'Caprona_C_H','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time' numel(Time)})
 nccreate(ExpName,'Caprona_C_S','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time' numel(Time)})
-nccreate(ExpName,'Caprona_C_UVel','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time' numel(Time)})
-nccreate(ExpName,'Caprona_C_VVel','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time' numel(Time)})
+nccreate(ExpName,'Caprona_C_VX','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time' numel(Time)})
+nccreate(ExpName,'Caprona_C_VY','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time' numel(Time)})
 nccreate(ExpName,'Caprona_C_Mask','Dimensions',{'Caprona C' numel(P.Caprona_Profile_C_X) 'Time' numel(Time)})
 
 nccreate(ExpName,'Caprona_D_H','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time' numel(Time)})
 nccreate(ExpName,'Caprona_D_S','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time' numel(Time)})
-nccreate(ExpName,'Caprona_D_UVel','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time' numel(Time)})
-nccreate(ExpName,'Caprona_D_VVel','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time' numel(Time)})
+nccreate(ExpName,'Caprona_D_VX','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time' numel(Time)})
+nccreate(ExpName,'Caprona_D_VY','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time' numel(Time)})
 nccreate(ExpName,'Caprona_D_Mask','Dimensions',{'Caprona D' numel(P.Caprona_Profile_D_X) 'Time' numel(Time)})
 
 nccreate(ExpName,'Halbrane_A_H','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time' numel(Time)})
 nccreate(ExpName,'Halbrane_A_S','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time' numel(Time)})
-nccreate(ExpName,'Halbrane_A_UVel','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time' numel(Time)})
-nccreate(ExpName,'Halbrane_A_VVel','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time' numel(Time)})
+nccreate(ExpName,'Halbrane_A_VX','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time' numel(Time)})
+nccreate(ExpName,'Halbrane_A_VY','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time' numel(Time)})
 nccreate(ExpName,'Halbrane_A_Mask','Dimensions',{'Halbrane A' numel(Q.Halbrane_Profile_A_X) 'Time' numel(Time)})
 
 nccreate(ExpName,'Halbrane_B_H','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time' numel(Time)})
 nccreate(ExpName,'Halbrane_B_S','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time' numel(Time)})
-nccreate(ExpName,'Halbrane_B_UVel','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time' numel(Time)})
-nccreate(ExpName,'Halbrane_B_VVel','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time' numel(Time)})
+nccreate(ExpName,'Halbrane_B_VX','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time' numel(Time)})
+nccreate(ExpName,'Halbrane_B_VY','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time' numel(Time)})
 nccreate(ExpName,'Halbrane_B_Mask','Dimensions',{'Halbrane B' numel(Q.Halbrane_Profile_B_X) 'Time' numel(Time)})
 
 nccreate(ExpName,'Halbrane_C_H','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time' numel(Time)})
 nccreate(ExpName,'Halbrane_C_S','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time' numel(Time)})
-nccreate(ExpName,'Halbrane_C_UVel','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time' numel(Time)})
-nccreate(ExpName,'Halbrane_C_VVel','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time' numel(Time)})
+nccreate(ExpName,'Halbrane_C_VX','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time' numel(Time)})
+nccreate(ExpName,'Halbrane_C_VY','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time' numel(Time)})
 nccreate(ExpName,'Halbrane_C_Mask','Dimensions',{'Halbrane C' numel(Q.Halbrane_Profile_C_X) 'Time' numel(Time)})
 
 nccreate(ExpName,'Halbrane_D_H','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time' numel(Time)})
 nccreate(ExpName,'Halbrane_D_S','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time' numel(Time)})
-nccreate(ExpName,'Halbrane_D_UVel','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time' numel(Time)})
-nccreate(ExpName,'Halbrane_D_VVel','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time' numel(Time)})
+nccreate(ExpName,'Halbrane_D_VX','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time' numel(Time)})
+nccreate(ExpName,'Halbrane_D_VY','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time' numel(Time)})
 nccreate(ExpName,'Halbrane_D_Mask','Dimensions',{'Halbrane D' numel(Q.Halbrane_Profile_D_X) 'Time' numel(Time)})
 
 
@@ -119,97 +119,97 @@ ncwrite(ExpName,'X',X)
 ncwrite(ExpName,'Y',Y)
 ncwrite(ExpName,'VX',VX)
 ncwrite(ExpName,'VY',VY)
-ncwrite(ExpName,'H',Hice)
+ncwrite(ExpName,'H',H)
 ncwrite(ExpName,'Mask',Mask)
 
 
 ncwrite(ExpName,'Halbrane_A_H',HHALA)
 ncwrite(ExpName,'Halbrane_A_S',Q.Halbrane_Profile_A_S)
-ncwrite(ExpName,'Halbrane_A_UVel',VXHALA)
-ncwrite(ExpName,'Halbrane_A_VVel',VYHALA)
-ncwrite(ExpName,'Halbrane_A_VVel',MHALA)
+ncwrite(ExpName,'Halbrane_A_VX',VXHALA)
+ncwrite(ExpName,'Halbrane_A_VY',VYHALA)
+ncwrite(ExpName,'Halbrane_A_Mask',MHALA)
 
 ncwrite(ExpName,'Halbrane_B_H',HHALB)
 ncwrite(ExpName,'Halbrane_B_S',Q.Halbrane_Profile_B_S)
-ncwrite(ExpName,'Halbrane_B_UVel',VXHALB)
-ncwrite(ExpName,'Halbrane_B_VVel',VYHALB)
-ncwrite(ExpName,'Halbrane_B_VVel',MHALB)
+ncwrite(ExpName,'Halbrane_B_VX',VXHALB)
+ncwrite(ExpName,'Halbrane_B_VY',VYHALB)
+ncwrite(ExpName,'Halbrane_B_Mask',MHALB)
 
 ncwrite(ExpName,'Halbrane_C_H',HHALC)
 ncwrite(ExpName,'Halbrane_C_S',Q.Halbrane_Profile_C_S)
-ncwrite(ExpName,'Halbrane_C_UVel',VXHALC)
-ncwrite(ExpName,'Halbrane_C_VVel',VYHALC)
-ncwrite(ExpName,'Halbrane_C_VVel',MHALC)
+ncwrite(ExpName,'Halbrane_C_VX',VXHALC)
+ncwrite(ExpName,'Halbrane_C_VY',VYHALC)
+ncwrite(ExpName,'Halbrane_C_Mask',MHALC)
 
 ncwrite(ExpName,'Halbrane_D_H',HHALD)
 ncwrite(ExpName,'Halbrane_D_S',Q.Halbrane_Profile_D_S)
-ncwrite(ExpName,'Halbrane_D_UVel',VXHALD)
-ncwrite(ExpName,'Halbrane_D_VVel',VYHALD)
-ncwrite(ExpName,'Halbrane_D_VVel',MHALD)
+ncwrite(ExpName,'Halbrane_D_VX',VXHALD)
+ncwrite(ExpName,'Halbrane_D_VY',VYHALD)
+ncwrite(ExpName,'Halbrane_D_Mask',MHALD)
 
 ncwrite(ExpName,'Caprona_A_H',HCAPA)
 ncwrite(ExpName,'Caprona_A_S',P.Caprona_Profile_A_S)
-ncwrite(ExpName,'Caprona_A_UVel',VXCAPA)
-ncwrite(ExpName,'Caprona_A_VVel',VYCAPA)
-ncwrite(ExpName,'Caprona_A_VVel',MCAPA)
+ncwrite(ExpName,'Caprona_A_VX',VXCAPA)
+ncwrite(ExpName,'Caprona_A_VY',VYCAPA)
+ncwrite(ExpName,'Caprona_A_Mask',MCAPA)
 
 ncwrite(ExpName,'Caprona_B_H',HCAPB)
 ncwrite(ExpName,'Caprona_B_S',P.Caprona_Profile_B_S)
-ncwrite(ExpName,'Caprona_B_UVel',VXCAPB)
-ncwrite(ExpName,'Caprona_B_VVel',VYCAPB)
-ncwrite(ExpName,'Caprona_B_VVel',MCAPB)
+ncwrite(ExpName,'Caprona_B_VX',VXCAPB)
+ncwrite(ExpName,'Caprona_B_VY',VYCAPB)
+ncwrite(ExpName,'Caprona_B_Mask',MCAPB)
 
 ncwrite(ExpName,'Caprona_C_H',HCAPC)
 ncwrite(ExpName,'Caprona_C_S',P.Caprona_Profile_C_S)
-ncwrite(ExpName,'Caprona_C_UVel',VXCAPC)
-ncwrite(ExpName,'Caprona_C_VVel',VYCAPC)
-ncwrite(ExpName,'Caprona_C_VVel',MCAPC)
+ncwrite(ExpName,'Caprona_C_VX',VXCAPC)
+ncwrite(ExpName,'Caprona_C_VY',VYCAPC)
+ncwrite(ExpName,'Caprona_C_Mask',MCAPC)
 
 ncwrite(ExpName,'Caprona_D_H',HCAPD)
 ncwrite(ExpName,'Caprona_D_S',P.Caprona_Profile_D_S)
-ncwrite(ExpName,'Caprona_D_UVel',VXCAPD)
-ncwrite(ExpName,'Caprona_D_VVel',VYCAPD)
-ncwrite(ExpName,'Caprona_D_VVel',MCAPD)
+ncwrite(ExpName,'Caprona_D_VX',VXCAPD)
+ncwrite(ExpName,'Caprona_D_VY',VYCAPD)
+ncwrite(ExpName,'Caprona_D_Mask',MCAPD)
 
 ncwriteatt(ExpName,'Caprona_A_H','Units','m');
 ncwriteatt(ExpName,'Caprona_A_S','Units','m');
-ncwriteatt(ExpName,'Caprona_A_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Caprona_A_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Caprona_A_VX','Units','m a-1');
+ncwriteatt(ExpName,'Caprona_A_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Caprona_B_H','Units','m');
 ncwriteatt(ExpName,'Caprona_B_S','Units','m');
-ncwriteatt(ExpName,'Caprona_B_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Caprona_B_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Caprona_B_VX','Units','m a-1');
+ncwriteatt(ExpName,'Caprona_B_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Caprona_C_H','Units','m');
 ncwriteatt(ExpName,'Caprona_C_S','Units','m');
-ncwriteatt(ExpName,'Caprona_C_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Caprona_C_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Caprona_C_VX','Units','m a-1');
+ncwriteatt(ExpName,'Caprona_C_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Caprona_D_H','Units','m');
 ncwriteatt(ExpName,'Caprona_D_S','Units','m');
-ncwriteatt(ExpName,'Caprona_D_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Caprona_D_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Caprona_D_VX','Units','m a-1');
+ncwriteatt(ExpName,'Caprona_D_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Halbrane_A_H','Units','m');
 ncwriteatt(ExpName,'Halbrane_A_S','Units','m');
-ncwriteatt(ExpName,'Halbrane_A_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Halbrane_A_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Halbrane_A_VX','Units','m a-1');
+ncwriteatt(ExpName,'Halbrane_A_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Halbrane_B_H','Units','m');
 ncwriteatt(ExpName,'Halbrane_B_S','Units','m');
-ncwriteatt(ExpName,'Halbrane_B_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Halbrane_B_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Halbrane_B_VX','Units','m a-1');
+ncwriteatt(ExpName,'Halbrane_B_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Halbrane_C_H','Units','m');
 ncwriteatt(ExpName,'Halbrane_C_S','Units','m');
-ncwriteatt(ExpName,'Halbrane_C_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Halbrane_C_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Halbrane_C_VX','Units','m a-1');
+ncwriteatt(ExpName,'Halbrane_C_VY','Units','m a-1');
 
 ncwriteatt(ExpName,'Halbrane_D_H','Units','m');
 ncwriteatt(ExpName,'Halbrane_D_S','Units','m');
-ncwriteatt(ExpName,'Halbrane_D_UVel','Units','m a-1');
-ncwriteatt(ExpName,'Halbrane_D_VVel','Units','m a-1');
+ncwriteatt(ExpName,'Halbrane_D_VX','Units','m a-1');
+ncwriteatt(ExpName,'Halbrane_D_VY','Units','m a-1');
 
 
 ncdisp(ExpName)
